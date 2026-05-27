@@ -16,6 +16,15 @@ management:
         enabled: true
 
 recon:
+  task-scan-limit: 100
+  processing-event-timeout-seconds: 300
+  running-task-timeout-seconds: 600
+  alert-processing-timeout-seconds: 300
+  alert-retry-intervals-seconds:
+    - 60
+    - 300
+    - 900
+  alert-max-attempts: 5
   processing:
     near-real-time-window-seconds: 60
     max-batch-size: 1000
